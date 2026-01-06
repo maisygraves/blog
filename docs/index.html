@@ -1,84 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            
-            header {
-                background-color: #ffffff;
-                color: #000000;
-                text-align: center;
-            }
 
-            nav {
-                background-color: #242424;
-                padding: 10px;
-            }
+<head>
+<meta name="robots" content="no index, nofollow">
+<title>Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-            nav a {
-                color: #fff;
-                text-decoration: none;
-                padding: 10px;
-                margin-right: 10px;
-                display: inline-block;
-            }
+<style>
+    * {box-sizing: border-box;}
+    
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
-            .container {
-                display: flex;
-                justify-content: space-between;
-                max-width: 95%;
-                margin: 0 auto;
-                padding: 20px;
-            }
+    .light-grey {background-color:#f1f1f1;}
+    a {color:#fff}
+    .datetag{
+        background-color:#616161;
+        color: #fff;
+        display:inline-block;
+        padding-left:15px;
+        padding-right:15px;
+        text-align:center;
+        font-size: 12px!important;
+        letter-spacing: .5px!important;
+    }
 
-            article p {
-                text-align: justify;
-            }
+    .content {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+        'header header header' 
+        'list list aside'
+        'list list aside'
+        'article article article'
+        'footer footer footer';
+        background-color: #f1f1f1;
+        gap: 20px;
+        padding: 50px;
+    }
+    .header {
+        grid-area:header;
+        padding: 20px;
+        text-align: center;
+        color: #000;
+        letter-spacing: 2px;
+    }
+    .aside {
+        grid-area: aside;
+        padding: 20px;
+        text-align: center;
+        color: #000;
+        background-color: #fff; 
+        box-shadow: 0 2px 5px 0 lightgray;
+    }
+    .list {
+        grid-area: list;
+        padding: 20px;
+        text-align: center;
+        color: #000;
+        background-color: #fff; 
+        box-shadow: 0 2px 5px 0 lightgray;
+        text-align: left!important;
+    }
+        .list-container {
+            display: flex;
+            flex-direction: column;
+            letter-spacing: 2px; 
+        }
+            .list-title {
+                padding-left: 12px;
+                background-color: pink!important;}
+    .article {
+        grid-area: article;
+        padding: 20px;
+        text-align: center;
+        color: #000;
+        background-color: #fff; 
+        box-shadow: 0 2px 5px 0 lightgray;
+        text-align: left!important;
+    }
+    .footer {
+        grid-area: footer;
+        padding: 20px;
+        text-align: center;
+        color: #000; 
+        background-color: #616161; 
+        color: #fff!important;
+        font-size: 12px!important;
+    }
 
-            main {
-                flex: 2;
-            }
+</style>
 
-            article {
-                margin-bottom: 20px;
-                padding: 10px 20px;
-                border: 1px solid rgb(145, 145, 145);
-                margin-right: 10px;
-            }
+</head>
 
-            aside {
-                flex: 1;
-                background-color: #c9c9c9;
-                padding: 10px;
-            }
+<body class="light-grey">
 
-            footer {
-                background-color: #242424;
-                color: #fff;
-                text-align: center;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-        <title>mtropy blog</title>
-    </head>
-
-    <body>
-        <header>
-            <h3>A Lifelong Learner's Blog</h3>
-            <p>I'm dedicated to building a more tolerant and 
-                nuanced world. By committing to intellectual 
-                transparency and documenting my learning process in 
-                real-time, I aim to invite dialogue, welcome feedback, 
-                and foster a culture of continuous improvement.
-            </p>
-        </header>
-    </body>   
+<div  class="container">
+    <div class="header"><h1>learning in public</h1></div>
+    <div class="aside"><p>aside</p></div>
+    <div class="list">
+        <div class="list-container">
+            <div class="list-title"><h3>list</h3></div>
+            <div><p>
+                <span class="datetag">yyyymmdd</span>
+                <span style="color: #fff;">.</span>
+                line 1</p></div>
+        </div>
+    </div>
+    <div class="venn-container">
+        <div class="circle top">
+            <span>Creativity</span>
+        </div>
+        <div class="circle left">
+            <span>Logic</span>
+        </div>
+        <div class="circle right">
+            <span>Process</span>
+        </div>
+    </div>
+    <div class="footer">
+        <p>This website is based on a <a href="https://www.w3schools.com/w3css/tryw3css_templates_blog.htm" target="_blank">w3 blog template</a></p>
+</div>
+</div>
+</div>
+</body>
 </html>

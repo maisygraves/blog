@@ -1,0 +1,15 @@
+<svg width="365" height="340" viewBox="0 0 365 340" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    circle {
+      fill-opacity: 0.4;}
+    text {
+        font-family: "DejaVu sans mono", monospace;
+        font-size: small;
+        fill: #36454f;
+    }
+    </style>
+    <circle cx="180" cy="220" r="120" fill="#A0522D" />
+    <circle cx="120" cy="120" r="120" fill="#4A5D23" /> 
+    <circle cx="240" cy="120" r="120" fill="#B2AC88" />
+    <text x="180" y="150" text-anchor="middle">DATA SCIENCE</text>
+</svg>
