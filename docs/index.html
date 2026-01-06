@@ -2,131 +2,151 @@
 <html lang="en">
 
 <head>
-<meta name="robots" content="no index, nofollow">
-<title>Blog</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
+    <meta name="robots" content="no index, nofollow">
+    <title>Blog - Learning in Public</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
 <style>
-    * {box-sizing: border-box;}
-    
-    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-
-    .light-grey {background-color:#f1f1f1;}
-    a {color:#fff}
-    .datetag{
-        background-color:#616161;
-        color: #fff;
-        display:inline-block;
-        padding-left:15px;
-        padding-right:15px;
-        text-align:center;
-        font-size: 12px!important;
-        letter-spacing: .5px!important;
-    }
-
-    .content {
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .container {
-        display: grid;
-        grid-template-areas:
-        'header header header' 
-        'list list aside'
-        'list list aside'
-        'article article article'
-        'footer footer footer';
+    * { box-sizing: border-box;}
+    body {
         background-color: #f1f1f1;
-        gap: 20px;
-        padding: 50px;
+        font-weight: 400;
+        font-family: 'DejaVu sans Mono', monospace;
+        max-width: 1400px;
+        margin: 40px;
     }
-    .header {
-        grid-area:header;
-        padding: 20px;
-        text-align: center;
-        color: #000;
-        letter-spacing: 2px;
-    }
-    .aside {
-        grid-area: aside;
-        padding: 20px;
-        text-align: center;
-        color: #000;
-        background-color: #fff; 
-        box-shadow: 0 2px 5px 0 lightgray;
-    }
-    .list {
-        grid-area: list;
-        padding: 20px;
-        text-align: center;
-        color: #000;
-        background-color: #fff; 
-        box-shadow: 0 2px 5px 0 lightgray;
-        text-align: left!important;
-    }
-        .list-container {
+    h2 {font-size: large;}
+    h3 {font-size: medium;}
+
+    div {color: #36454f; margin: 10px;}
+        header {text-align: center; margin-bottom: 30px;}
+            .header-blurb {
+                font-size: small; 
+                width: 70%; 
+                line-height: 20px;
+                margin: auto;}
+            span.header {background-color: #fff;}
+        .nav {
+            background-color: #f1f1f1;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
             display: flex;
-            flex-direction: column;
-            letter-spacing: 2px; 
+            justify-content: center;
+            font-weight: 600!important;
         }
-            .list-title {
-                padding-left: 12px;
-                background-color: pink!important;}
-    .article {
-        grid-area: article;
-        padding: 20px;
+            ul.nav li {
+                display: block;
+                padding: 14px 16px;
+            }
+                ul.nav li:hover {
+                    border: 0.1px solid #36454f;
+                    background-color: rgba(74,93,35,0.2);
+                }
+        div.midpage {
+            display: grid; 
+            grid-template-columns: auto 33%;
+            margin-top: 30px;
+        }
+            .venn-d {
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                padding: 0;
+                width: 100%;
+                height: auto;
+            }
+            .about-me p {
+                    font-size: small;
+                    margin-left: 10px;
+                    line-height: 20px;
+                }
+            div.socials {
+                display: flex; 
+                flex-wrap: wrap;
+                justify-content: right;
+            }
+                div.socials button {
+                    cursor: pointer;
+                    background-color: none;
+                    border: none;
+                    padding: 5px;
+                }
+                    div.socials button:hover {
+                        background-color: rgba(74,93,35,0.2);
+                        border: 0.1px solid #36454f;
+                    }
+                    .bi {font-size: 20px; color: #36454f;}
+
+    footer {
+        background-color: #36454f;
+        color: #fff;
+        font-size: small;
         text-align: center;
-        color: #000;
-        background-color: #fff; 
-        box-shadow: 0 2px 5px 0 lightgray;
-        text-align: left!important;
-    }
-    .footer {
-        grid-area: footer;
         padding: 20px;
-        text-align: center;
-        color: #000; 
-        background-color: #616161; 
-        color: #fff!important;
-        font-size: 12px!important;
     }
+        footer a {color: #fff}
 
 </style>
 
-</head>
-
-<body class="light-grey">
-
-<div  class="container">
-    <div class="header"><h1>learning in public</h1></div>
-    <div class="aside"><p>aside</p></div>
-    <div class="list">
-        <div class="list-container">
-            <div class="list-title"><h3>list</h3></div>
-            <div><p>
-                <span class="datetag">yyyymmdd</span>
-                <span style="color: #fff;">.</span>
-                line 1</p></div>
+<body>
+<div>
+    <header>
+        <h1>learning to learn</h1>
+        <div class="header-blurb"><p>This blog serves as a portfolio of work, 
+            a tool for articulating and reflecting on new knoweldge and skills, 
+            a record of the people and ideas shaping my knowledge and an 
+            <span class="header">invitation for feedback and redirection</span>.</p>
+        </div>
+    </header>
+    <div><ul class="nav">
+        <li>projects</li>
+        <li>reflections</li>
+        <li>resources</li></ul>
+    </div>
+    <div class="midpage">
+        <div class="venn-d">
+            <img src="diagram.svg" alt="skills venn-diagram">
+        </div>
+        <div class="about-me">
+            <h3>Hi, I'm Maisy Graves.</h3>
+            <p>I translate complex information into accurate and meaningful stories, 
+                provide insights that support informed, impactful decisions and 
+                bring complexity and nuance to light.</p>
+                <hr>
+            <p>If you have interest or <span class="header">feedback</span> 
+                regarding my work, you can reach me here 
+                <span class="header"><i class="bi bi-arrow-down-circle " 
+                    style="font-size: 18px;"></i></span></p>
+            <div class="socials">
+                <button onclick="window.open(
+                    'https://www.linkedin.com/in/maigraves/','_blank')">
+                    <i class="bi bi-linkedin"></i></button>
+                <button onclick="window.open(
+                    'https://github.com/maisygraves','_blank')">
+                    <i class="bi bi-github"></i></button>
+                <button onclick="window.open(
+                    'https://bsky.app/profile/mtropy.bsky.social','_blank')">
+                    <i class="bi bi-bluesky"></i></button>
+            </div>
         </div>
     </div>
-    <div class="venn-container">
-        <div class="circle top">
-            <span>Creativity</span>
-        </div>
-        <div class="circle left">
-            <span>Logic</span>
-        </div>
-        <div class="circle right">
-            <span>Process</span>
-        </div>
+    <div title="posts">
+        <h2>latest content</h2>
+        <li>yyyymmdd post 1 tag tag</li>
+        <li>yyyymmdd post 2 tag</li>
     </div>
-    <div class="footer">
-        <p>This website is based on a <a href="https://www.w3schools.com/w3css/tryw3css_templates_blog.htm" target="_blank">w3 blog template</a></p>
 </div>
-</div>
-</div>
+<footer>
+    <p>This website is inspired by free blog templates from
+        <a href="https://www.w3schools.com/w3css/tryw3css_templates_blog.htm" 
+            target="_blank"> w3 schools</a> and
+        <a href="https://wordpress.org/themes/blogus/"
+            target="_blank"> wordpress</a>.</p>
+</footer>
 </body>
+
 </html>
+
