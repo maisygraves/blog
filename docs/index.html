@@ -28,30 +28,15 @@
                 line-height: 20px;
                 margin: auto;}
             span.header {background-color: #fff;}
-        .nav {
-            background-color: #f1f1f1;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            font-weight: 600!important;
-        }
-            ul.nav li {
-                display: block;
-                padding: 14px 16px;
-            }
-                ul.nav li:hover {
-                    border: 0.1px solid #36454f;
-                    background-color: rgba(74,93,35,0.2);
-                }
         div.midpage {
             display: grid; 
-            grid-template-columns: auto 33%;
+            grid-template-columns: auto 35%;
+            gap: 30px;
             margin-top: 30px;
         }
             .venn-d {
-                margin-top: 50px;
+                margin-top: 30px;
+                margin-right: auto;
                 display: flex;
                 justify-content: center;
                 padding: 0;
@@ -60,7 +45,7 @@
             }
             .about-me p {
                     font-size: small;
-                    margin-left: 10px;
+                    margin-left: auto;
                     line-height: 20px;
                 }
             div.socials {
@@ -75,11 +60,29 @@
                     padding: 5px;
                 }
                     div.socials button:hover {
-                        background-color: rgba(74,93,35,0.2);
+                        background-color: #fff;
                         border: 0.1px solid #36454f;
                     }
                     .bi {font-size: 20px; color: #36454f;}
-
+        .nav {
+        list-style-type: none;
+        height: auto;
+        margin-top: 30px;
+        padding: 0;
+        display: flex;
+        justify-content: left;
+        font-weight: 600!important;
+        }
+            ul.nav li {
+                display: block;
+                padding: 8px;
+            }
+                ul.nav li:hover {
+                    background-color: #eff;
+                }
+        .posts {
+            list-style-type: none;
+        }
     footer {
         background-color: #36454f;
         color: #fff;
@@ -94,18 +97,13 @@
 <body>
 <div>
     <header>
-        <h1>learning to learn</h1>
+        <h1>{{site.title}}</h1>
         <div class="header-blurb"><p>This blog serves as a portfolio of work, 
             a tool for articulating and reflecting on new knoweldge and skills, 
             a record of the people and ideas shaping my knowledge and an 
             <span class="header">invitation for feedback and redirection</span>.</p>
         </div>
     </header>
-    <div><ul class="nav">
-        <li>projects</li>
-        <li>reflections</li>
-        <li>resources</li></ul>
-    </div>
     <div class="midpage">
         <div class="venn-d">
             <img src="src/assets/diagram.svg" alt="skills venn-diagram">
@@ -133,8 +131,12 @@
             </div>
         </div>
     </div>
-    <div title="posts">
-        <h2>latest content</h2>
+        <div><ul class="nav">
+        <li><h2>projects</h2></li>
+        <li><h2>reflections</h2></li>
+        <li><h2>resources</h2></li></ul>
+    </div>
+    <div class="posts">
         <li>yyyymmdd post 1 tag tag</li>
         <li>yyyymmdd post 2 tag</li>
     </div>
