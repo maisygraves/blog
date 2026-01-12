@@ -22,10 +22,25 @@
                 line-height: 20px;
                 margin: auto;}
             span.header {background-color: #fff;}
+        .nav {
+            list-style-type: none;
+            height: auto;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            font-weight: 600!important;
+        }
+            ul.nav li {
+                display: block;
+                padding: 8px;
+            }
+                ul.nav li:hover {
+                    background-color: #eff;
+                }
         div.midpage {
-            display: grid; 
-            grid-template-columns: auto 35%;
-            gap: 30px;
+        display: grid; 
+        grid-template-columns: auto 35%;
+        gap: 30px;
         }
             .venn-d {
                 margin-right: auto;
@@ -57,21 +72,6 @@
                         border: 0.1px solid #36454f;
                     }
                     .bi {font-size: 20px; color: #36454f;}
-        .nav {
-            list-style-type: none;
-            height: auto;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            font-weight: 600!important;
-        }
-            ul.nav li {
-                display: block;
-                padding: 8px;
-            }
-                ul.nav li:hover {
-                    background-color: #eff;
-                }
         .posts {
             list-style-type: none;
             padding: 0;
