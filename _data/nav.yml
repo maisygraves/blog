@@ -1,0 +1,9 @@
+navigation:
+- name: projects
+  link: ./projects.html
+- name: reflections
+  link: ./reflections.html
+- name: resources
+  link: ./resources.html
+
+ 

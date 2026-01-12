@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h1>Latest Projects</h1>
+<p style="text-indent: 25px;">portfolio of work</p>
+<hr>
+<ul class="posts">
+    {% for post in site.posts %}
+        {% if post.categories contains "project" %}
+
+            {% include post-list.md %}
+
+        {% endif %}
+    {% endfor %}
+</ul>

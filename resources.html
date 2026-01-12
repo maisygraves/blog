@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h1>Resources</h1>
+<p style="text-indent: 25px;">incomplete record of the people and ideas that have shaped my knowledge over the years</p>
+<hr>
+<ul class="posts">
+    {% for post in site.posts %}
+        {% if post.categories contains "resource" %}
+
+            {% include post-list.md %}
+
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,8 @@
+# site settings
+title: public school
+
+# build settings
+markdown: kramdown
+
+# exclude files from build
+exclude: [docs2]
