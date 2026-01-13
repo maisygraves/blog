@@ -69,6 +69,15 @@
             .post-list-item:hover {text-decoration: underline;}
             h2.post-list {text-indent: 2rem;}
         .post-list-content {margin-top: 75px;}
+        .post-list-date_category {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+        .post-list-_category {font-size:.75rem}
 
 /* site home page */
 

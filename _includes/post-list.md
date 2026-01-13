@@ -1,7 +1,10 @@
 <ul class="post-list">
     <ul class="post-list">
         <li>
-            {{ post.date | date: "%Y-%m-%d" }}
+            <ul class="post-list-date_category">
+                <li>{{ post.date | date: "%Y-%m-%d" }}</li>
+                <li class="post-list-_category">{{ post.category }}</li>
+            </ul>
         </li>
         <li>
             <h2 class="post-list"><a href="{{ post.url }}">{{ post.title }}</a></h2>
