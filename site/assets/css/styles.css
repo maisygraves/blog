@@ -77,11 +77,7 @@
             flex-direction: column;
             text-align: right;
         }
-        .post-list-_category {
-            font-size:.75rem;
-            font-style: italic; 
-            border-top: 0.1px solid white;
-        }
+        .post-list-_category {font-size:.75rem}
 
 /* site home page */
 

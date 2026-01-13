@@ -8,7 +8,7 @@
 
     <div class="about-me">
 
-        <h3>Hi, I'm Maisy Graves.</h3>
+        <h4>Hi, I'm Maisy Graves.</h4>
 
         <p>I translate complex information into accurate and meaningful stories, 
             provide insights that support informed, impactful decisions and 
