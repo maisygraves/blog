@@ -1,8 +1,8 @@
+# default configurations ...
+# https://jekyllrb.com/docs/configuration/default/
+
+
 # site settings
-title: public school
+title: b-Log
 
-# build settings
-markdown: kramdown
-
-# exclude files from build
-exclude: [docs2]
+url: https://github.com/maisygraves/blog

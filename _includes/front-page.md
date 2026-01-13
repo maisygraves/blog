@@ -2,7 +2,6 @@
     
     <div class="venn-d">
 
-        <h3>My skills:</h3>
         <object data="{{ site.baseurl }}/assets/img/diagram.svg" type="image/svg+xml"></object>
 
     </div>

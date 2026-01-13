@@ -1,16 +1,23 @@
 ---
 layout: default
+title: projects
 ---
 
-<h1>Latest Projects</h1>
-<p style="text-indent: 25px;">portfolio of work</p>
+{% include home-nav.md %}
+
+<header class="nonhome-page-heading">
+
+    <h1>latest {{ page.title }}</h1>
+</header>
+
 <hr>
-<ul class="posts">
-    {% for post in site.posts %}
-        {% if post.categories contains "project" %}
 
-            {% include post-list.md %}
+<div class="post-content">
+{% for post in site.posts %}
+    {% if post.categories contains "project" %}
 
-        {% endif %}
-    {% endfor %}
-</ul>
+        {% include post-list.md %}
+
+    {% endif %}
+{% endfor %}
+</div>

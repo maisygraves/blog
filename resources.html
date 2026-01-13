@@ -1,16 +1,18 @@
 ---
 layout: default
+title: resources
 ---
 
-<h1>Resources</h1>
-<p style="text-indent: 25px;">incomplete record of the people and ideas that have shaped my knowledge over the years</p>
+{% include home-nav.md %}
+
+<header class="nonhome-page-heading">
+    <h1>{{ page.title }}</h1>
+    <p>
+        blurb
+    </p>
+</header>
+
 <hr>
-<ul class="posts">
-    {% for post in site.posts %}
-        {% if post.categories contains "resource" %}
 
-            {% include post-list.md %}
-
-        {% endif %}
-    {% endfor %}
-</ul>
+<div>
+</div>

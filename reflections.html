@@ -1,16 +1,27 @@
 ---
 layout: default
+title: reflections
 ---
 
-<h1>Reflections</h1>
-<p style="text-indent: 25px;">reflective writings about learning new knowledge and skills</p>
+{% include home-nav.md %}
+
+<header class="nonhome-page-heading">
+    <h1>latest {{ page.title }}</h1>
+    <p>
+        These are concise technical notes written after completing
+        projects or study. They reflect my understanding at the time 
+        of writing.
+    </p>
+</header>
+
 <hr>
-<ul class="posts">
-    {% for post in site.posts %}
-        {% if post.categories contains "reflection" %}
 
-            {% include post-list.md %}
+<div class="post-list-content">
+{% for post in site.posts %}
+    {% if post.categories contains "reflection" %}
 
-        {% endif %}
-    {% endfor %}
-</ul>
+        {% include post-list.md %}
+
+    {% endif %}
+{% endfor %}
+</div>

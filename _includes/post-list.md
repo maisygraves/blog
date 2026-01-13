@@ -1,14 +1,18 @@
-<li class="post-item">
-    
-    {{ post.date | date: "%Y-%m-%d" }}
+<ul class="post-list">
+    <ul class="post-list">
+        <li>
+            {{ post.date | date: "%Y-%m-%d" }}
+        </li>
+        <li>
+            <h2 style="text-indent: 2rem;"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </li>
+    </ul>
 
-    <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-    <span class="post-tags">
-        {% for tag in post.tags %}
-
-            <a class="tag" href="/tags/{{ tag }}/">.{{ tag }}</a>
-
+    <li class="post-subheading-skills">
+        {% for skills in post.skills %}
+            <a href="/skills/{{ skills }}/">/{{ skills }}</a>
         {% endfor %}
-    </span>
-</li>
+    </li>
+
+</ul>
+

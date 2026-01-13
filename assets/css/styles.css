@@ -1,5 +1,6 @@
     * { box-sizing: border-box;}
 
+
     body {
         background-color: #f1f1f1;
         font-weight: 400;
@@ -8,88 +9,114 @@
         margin: 40px;
         color: #36454f
     }
+    div {margin: 10px;}
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+        a:hover {text-decoration: underline;}
+    footer {
+        margin-top: 100px;
+        background-color: #36454f;
+        color: #fff;
+        font-size: small;
+        text-align: center;
+        padding: 20px;
+    }
 
-    h2 {font-size: large;}
-    h3 {font-size: medium;}
+/* link to home page - for all pages except home page */
+    .home-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
 
-    a {color: inherit}
+/* header styles across pages */
+    header {margin-bottom: 30px;}
+        .nonhome-page-heading {text-align: left;}
+        .home-page-heading {text-align: center;}
 
-    div {color: #36454f; margin: 10px;}
-        header {text-align: center; margin-bottom: 30px;}
-            .header-blurb {
-                font-size: small; 
-                width: 70%; 
-                line-height: 20px;
-                margin: auto;}
-            span.header {background-color: #fff;}
-        .nav {
+/* post page headings */
+        .post-subheading {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        .post-subheading-skills {
+            margin-left: auto;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: .75rem;
+            text-decoration: none;
+        }
+        .post-content {margin-top: 120px;}
+
+/* post-list formatting for projects and notes pages */
+
+        .post-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+            .post-list-item:hover {text-decoration: underline;}
+        .post-list-content {margin-top: 75px;}
+
+/* site home page */
+
+    .header-blurb {
+        font-size: small; 
+        width: 70%; 
+        line-height: 20px;
+        margin: auto;
+    }
+
+    .nav {
             list-style-type: none;
             height: auto;
             padding: 0;
+            margin: 0;
             display: flex;
+            flex-direction: row;
             justify-content: center;
-            font-weight: 600!important;
+            gap: 1rem;
+    }
+        ul.nav li:hover {
+            color: #000;
+            border-top: #36454f;
         }
-            ul.nav li {
-                display: block;
-                padding: 8px;
-            }
-                ul.nav li:hover {
-                    background-color: #eff;
-                }
-        div.midpage {
+
+    div.midpage {
         display: grid; 
         grid-template-columns: auto 35%;
         gap: 30px;
-        }
-            .venn-d {
-                margin-right: auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: left;
-                padding: 0;
-                width: 100%;
-                height: auto;
-            }
-            .about-me p {
-                font-size: small;
-                margin-left: auto;
-                line-height: 20px;
-                }
-            div.socials {
-                display: flex; 
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-                div.socials button {
-                    cursor: pointer;
-                    background-color: none;
-                    border: none;
-                    padding: 5px;
-                }
-                    div.socials button:hover {
-                        background-color: #fff;
-                        border: 0.1px solid #36454f;
-                    }
-                    .bi {font-size: 20px; color: #36454f;}
-        .posts {
-            list-style-type: none;
+    }
+        .venn-d {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
             padding: 0;
+            width: 100%;
+            height: auto;
         }
-            .post-item {
-                display: flex;
-                align-items: baseline;
-                gap: 1rem;
-                padding: 25px;
+        .about-me p {
+            font-size: small;
+            line-height: 20px;
+        }
+            div.socials button:hover {
+                background-color: #fff;
             }
-            .post-page-heading {
-                display: flex;
-                align-items: baseline;
-            }
-                .post-item:hover {
-                    background-color: #fff;
-                }
-            .post-post-heading {
+
+
+ /*
+        .post-post-heading {
                 text-align: left; 
                 margin-bottom: 70px;
             }
@@ -112,11 +139,43 @@
             .tag:hover {
                 text-decoration: underline;
             }
-    footer {
-        margin-top: 100px;
-        background-color: #36454f;
-        color: #fff;
-        font-size: small;
-        text-align: center;
-        padding: 20px;
-    }
+       .posts {
+            list-style-type: none;
+            padding: 0;
+        }
+        .post-page-heading {
+                display: flex;
+                align-items: baseline;
+            } 
+
+
+
+
+
+
+            
+            span.header {background-color: #fff;}
+        
+            ul.nav li {
+                display: block;
+                padding: 8px;
+            }
+            
+            
+            div.socials {
+                display: flex; 
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+                div.socials button {
+                    cursor: pointer;
+                    background-color: none;
+                    border: none;
+                    padding: 5px;
+                }
+                    
+                    .bi {font-size: 20px; color: #36454f;}
+        
+            
+            
+    */
