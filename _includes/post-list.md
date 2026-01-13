@@ -4,7 +4,7 @@
             {{ post.date | date: "%Y-%m-%d" }}
         </li>
         <li>
-            <h2 style="text-indent: 2rem;"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="post-list"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         </li>
     </ul>
 

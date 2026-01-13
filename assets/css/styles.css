@@ -36,7 +36,7 @@
         .nonhome-page-heading {text-align: left;}
         .home-page-heading {text-align: center;}
 
-/* post page headings */
+/* post and skills page headings */
         .post-subheading {
             list-style-type: none;
             padding: 0;
@@ -67,6 +67,7 @@
             align-items: baseline;
         }
             .post-list-item:hover {text-decoration: underline;}
+            h2.post-list {text-indent: 2rem;}
         .post-list-content {margin-top: 75px;}
 
 /* site home page */
@@ -113,7 +114,6 @@
             div.socials button:hover {
                 background-color: #fff;
             }
-
 
  /*
         .post-post-heading {

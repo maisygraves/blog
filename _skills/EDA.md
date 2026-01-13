@@ -1,6 +1,6 @@
 ---
 layout: skills
 skills: EDA
-color: 
+color: #974B59
 permalink: /skills/EDA
 ---

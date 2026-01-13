@@ -6,3 +6,7 @@
 title: b-Log
 
 url: https://github.com/maisygraves/blog
+
+collections:
+  skills:
+    output: true

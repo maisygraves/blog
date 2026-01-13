@@ -1,5 +1,0 @@
----
-layout: tags
-tags: python
-permalink: /tags/python
----

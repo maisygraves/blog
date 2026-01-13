@@ -6,14 +6,14 @@
     .circle-text {
         font-weight: bold;
         font-size: 17px;
-        fill: #000;
+        fill: #36454f;
     }
     .center-text{
       font-weight: bold;
         font-size: 17px;
-        fill: #000;
+        fill: #36454f;
     }
-    .footer {font-weight:lighter; font-size: 10px;}
+    .footer {font-weight:lighter; font-size: 10px; fill: #36454f;}
     .tag-text {font-size: 13px; fill: #fff;}
     rect:hover {fill: #36454f;}
     text:hover {fill: #36454f;}
@@ -23,15 +23,15 @@
       <path id="path_sr" d="M 25 180 A 180 180 0 0 1 150 35" fill="none"></path>
       <text class="circle-text"><textPath href="#path_sr" startOffest="80">scientific reasoning</textPath></text>
     
-      <a href="/tags/statistical-inference.html" target="_parent">
+      <a href="/skills/statistical-inference.html" target="_parent">
       <rect width="159" height="24" x="95" y="100" rx="5" ry="5" fill="#8E4585"/>
       <text x="100" y="115" class="tag-text">statistical inference</text></a>
 
-      <a href="/tags/scientific-method.html" target="_parent">
+      <a href="/skills/scientific-method.html" target="_parent">
       <rect width="132" height="24" x="70" y="150" rx="5" ry="5" fill="#8E4585"/>
       <text x="75" y="165" class="tag-text">scientific method</text></a>
 
-      <a href="/tags/logical-reasoning.html" target="_parent">
+      <a href="/skills/logical-reasoning.html" target="_parent">
       <rect width="132" height="24" x="85" y="200" rx="5" ry="5" fill="#8E4585"/>
       <text x="90" y="215" class="tag-text">logical reasoning</text></a>
 
@@ -39,19 +39,19 @@
     <path id="path_cp" d="M 420 55 A 180 180 0 0 1 600 205" fill="none"></path>
     <text class="circle-text"><textPath href="#path_cp" startOffest="80">computer programming</textPath></text>
 
-      <a href="/tags/data-storage.html" target="_parent">
+      <a href="/skills/data-storage.html" target="_parent">
       <rect width="97" height="24" x="430" y="120" rx="5" ry="5" fill="#4A5D23"/>
       <text x="435" y="135" class="tag-text">data storage</text></a>
       
-      <a href="/tags/data-retrieval.html" target="_parent">
+      <a href="/skills/data-retrieval.html" target="_parent">
       <rect width="110" height="24" x="450" y="170" rx="5" ry="5" fill="#4A5D23"/>
       <text x="455" y="185" class="tag-text">data retrieval</text></a>
 
-      <a href="/tags/data-transformation.html" target="_parent">
+      <a href="/skills/data-transformation.html" target="_parent">
       <rect width="145" height="24" x="420" y="220" rx="5" ry="5" fill="#4A5D23"/>
       <text x="425" y="235" class="tag-text">data transformation</text></a>
 
-      <a href="/tags/automation.html" target="_parent">
+      <a href="/skills/automation.html" target="_parent">
       <rect width="85" height="24" x="460" y="275" rx="5" ry="5" fill="#4A5D23"/>
       <text x="465" y="290" class="tag-text">automation</text></a>
 
@@ -59,33 +59,33 @@
     <path id="path_dc" d="M 300 595 A 180 180 0 0 0 460 500" fill="none"></path>
     <text class="circle-text"><textPath href="#path_dc" startOffest="80">data comprehension</textPath></text>
 
-      <a href="/tags/visualization.html" target="_parent">
+      <a href="/skills/visualization.html" target="_parent">
       <rect width="105" height="24" x="175" y="420" rx="5" ry="5" fill="#A0522D"/>
       <text x="180" y="435" class="tag-text">visualization</text></a>
 
-      <a href="/tags/descriptive-statistics.html" target="_parent">
+      <a href="/skills/descriptive-statistics.html" target="_parent">
       <rect width="168" height="24" x="245" y="460" rx="5" ry="5" fill="#A0522D"/>
       <text x="250" y="475" class="tag-text">descriptive statistics</text></a>
 
-      <a href="/tags/infoVis.html" target="_parent">
+      <a href="/skills/infoVis.html" target="_parent">
       <rect width="60" height="24" x="300" y="505" rx="5" ry="5" fill="#A0522D"/>
       <text x="305" y="520" class="tag-text">infoVis</text></a>
 
 
 
-    <a href="/tags/data-wrangling.html" target="_parent">
+    <a href="/skills/data-wrangling.html" target="_parent">
     <rect width="110" height="24" x="350" y="340" rx="5" ry="5" fill="#755728"/>
     <text x="355" y="355" class="tag-text">data wrangling</text></a>
 
-    <a href="/tags/EDA.html" target="_parent">
+    <a href="/skills/EDA.html" target="_parent">
     <rect width="45" height="24" x="175" y="320" rx="5" ry="5" fill="#974B59"/>
     <text x="180" y="335" class="tag-text">E D A</text></a>
 
-    <a href="/tags/modeling.html" target="_parent">
+    <a href="/skills/modeling.html" target="_parent">
     <rect width="68" height="24" x="285" y="135" rx="5" ry="5" fill="#6C5154"/>
     <text x="290" y="150" class="tag-text">modeling</text></a>
 
-    <a href="/tags/machine-learning.html" target="_parent">
+    <a href="/skills/machine-learning.html" target="_parent">
     <rect width="125" height="24" x="260" y="185" rx="5" ry="5" fill="#6C5154"/>
     <text x="265" y="200" class="tag-text">machine learning</text></a>
 
