@@ -5,6 +5,6 @@ navigation:
   link: ./resources.html
 - name: resume
   link: https://www.linkedin.com/in/maigraves/
-- name: reflections
-  link: ./reflections.html
+- name: notes
+  link: ./notes.html
  

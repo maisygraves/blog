@@ -20,7 +20,7 @@ layout: default
 
 <div class="post-list-content">
     {% for post in site.posts %}
-        {% if post.category contains "reflection" %}
+        {% if post.category contains "note" %}
                 {% include post-list.md %}
         {% endif %}
     {% endfor %}
