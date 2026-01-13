@@ -4,7 +4,7 @@
 
     <div class="header-blurb">
             <p>
-                blurb
+                A map of the ideas, tools and people shaping my practice, presented through documented projects with reflective write-ups and a curated collection of technical resources.
             </p>
     </div>
 
