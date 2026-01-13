@@ -10,16 +10,14 @@
 
         <h4>Hi, I'm Maisy Graves.</h4>
 
-        <p>I translate complex information into accurate and meaningful stories, 
-            provide insights that support informed, impactful decisions and 
-            bring complexity and nuance to light.
+        <p>I translate data into stories, bringing nuance to light 
+        to ensure that complex information leads to impactful decisions.
         </p>
 
         <hr>
 
-        <p>If you have interest or 
-            <span class="header">feedback</span> 
-            regarding my work, you can reach me here 
+        <p>If you have interest or feedback regarding my work, 
+        you can reach me here 
             <span class="header">
                 <i class="bi bi-arrow-down-circle " style="font-size: 18px;"></i>
             </span>
