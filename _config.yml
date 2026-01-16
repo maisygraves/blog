@@ -1,8 +1,16 @@
 # default configurations ...
 # https://jekyllrb.com/docs/configuration/default/
+# tool icons at https://www.techicons.dev/icons
 
 
 # site settings
 title: b-Log
 
 url: https://github.com/maisygraves/blog
+description: A map of the ideas, tools and people shaping my practice, presented through documented projects with reflective write-ups and a curated collection of technical resources.
+
+collections:
+  skills:
+    output: true
+  tech-stack:
+    output: true

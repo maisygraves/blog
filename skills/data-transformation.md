@@ -1,6 +1,5 @@
 ---
-layout: skills
-skills: data-transformation
-color: #4A5D23
-permalink: /skills/data-transformation
+layout: skill-tech_page
+title: data-transformation
+name: data-transformation
 ---

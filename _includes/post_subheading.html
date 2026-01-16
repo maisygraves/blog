@@ -1,0 +1,14 @@
+    <ul class="subheading" style="border-bottom: 1px solid;">
+        <li>{{ page.category }}</li>
+        <li>{{ page.date | date: "%Y-%b-%d" }}</li>
+    </ul>
+
+    <ul class="subheading">
+        <li>{{ page.repo }}</li>
+        <li>
+            <ul class="post_skills-tech">
+                {% include skills_feature.html %}
+                {% include tech_feature.html %}
+            </ul>
+        </li>
+    </ul>

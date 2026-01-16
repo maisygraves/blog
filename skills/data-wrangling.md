@@ -1,6 +1,5 @@
 ---
-layout: skills
-skills: data-wrangling
-color: #755728
-permalink: /skills/data-wrangling
+layout: skill-tech_page
+title: data-wrangling
+name: data-wrangling
 ---

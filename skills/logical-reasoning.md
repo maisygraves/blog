@@ -1,6 +1,5 @@
 ---
-layout: skills
-skills: logical-reasoning
-color: #8E4585
-permalink: /skills/logical-reasoning
+layout: skill-tech_page
+title: logical-reasoning
+name: logical reasoning
 ---

@@ -1,6 +1,5 @@
 ---
-layout: skills
-skills: EDA
-color: #974B59
-permalink: /skills/EDA
+layout: skill-tech_page
+title: EDA
+name: exploratory data analysis
 ---

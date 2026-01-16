@@ -1,0 +1,10 @@
+<ul class="post_tech">
+    {% assign tech-stack = site.tech-stack | where: tech-stack, page.tech-stack %}
+    {% for tech-stack in page.tech-stack %}
+    <li>
+        <a href="/tech-stack/{{ tech-stack }}">
+            <img src="/assets/img/{{ tech-stack }}.svg" alt="{{ tech-stack }}">
+        </a>
+    </li>
+    {% endfor %}
+</ul>

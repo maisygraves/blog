@@ -1,6 +1,5 @@
 ---
-layout: skills
-skills: visualization
-color: #A0522D
-permalink: /skills/visualization
+layout: skill-tech_page
+title: visualization
+name: visualization
 ---

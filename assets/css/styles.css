@@ -1,14 +1,84 @@
-    * { box-sizing: border-box;}
+* { box-sizing: border-box;}
 
-
+/*============= default styles ============*/
     body {
         background-color: #f1f1f1;
         font-weight: 400;
         font-family: 'DejaVu sans Mono', monospace;
-        max-width: 1400px;
-        margin: 40px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 40px;
         color: #36454f
     }
+    a {text-decoration: none; color: inherit;}
+    a:hover {text-decoration: underline;}
+
+/*=============== HEADER STYLES ================*/
+
+/*---------------titles, blurbs -------------*/
+
+header {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+.head-center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.head-blurb {width: 65%; margin: 0 auto;}
+.head-left {
+    display: flex;
+    align-items: left;
+    align-content: left;
+    width: 100%;
+}
+
+/*------------- post subheading styles -------------*/
+.subheading {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+.post_skills-tech {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.post_skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    text-indent: 10px;
+    margin-bottom: 10px;
+    font-size: .75rem;
+}
+.post_tech {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+.post-tech li {display: inline-block;}
+.post_tech img {
+  display: block;
+  width: 20px;     
+  height: auto;      
+}
+
+/*
     div {margin: 10px;}
     a {
         color: inherit;
@@ -24,19 +94,19 @@
         padding: 20px;
     }
 
-/* link to home page - for all pages except home page */
+/* link to home page - for all pages except home page 
     .home-nav {
         width: 100%;
         display: flex;
         justify-content: flex-end;
     }
 
-/* header styles across pages */
+/* header styles across pages 
     header {margin-bottom: 30px;}
         .nonhome-page-heading {text-align: left;}
         .home-page-heading {text-align: center;}
 
-/* post and skills page headings */
+/* post and skills page headings 
         .post-subheading {
             list-style-type: none;
             padding: 0;
@@ -55,7 +125,7 @@
         }
         .post-content {margin-top: 120px;}
 
-/* post-list formatting for projects and notes pages */
+/* post-list formatting for projects and notes pages 
 
         .post-list {
             list-style-type: none;
@@ -83,7 +153,7 @@
             border-top: 0.1px solid white;
         }
 
-/* site home page */
+/* site home page 
 
     .header-blurb {
         font-size: small; 
@@ -127,3 +197,4 @@
             div.socials button:hover {
                 background-color: #fff;
             }
+

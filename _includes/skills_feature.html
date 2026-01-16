@@ -1,0 +1,8 @@
+<ul class="post_skills">
+    {% assign skills = site.skills | where: skills, page.skills %}
+    {% for skills in page.skills %}
+    <li>
+        <a href="/skills/{{ skills }}">/{{ skills}}</a>
+    </li>
+    {% endfor %}
+</ul>
