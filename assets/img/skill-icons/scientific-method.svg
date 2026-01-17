@@ -1,0 +1,13 @@
+<svg width="100%" height="100%" viewBox="0 0 135 25" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+    text {font-family: "DejaVu sans mono", monospace;}
+    .tag-text {font-size: 13px; fill: #fff;}
+    rect:hover {fill: #36454f;}
+    .tag-text:hover {fill: #36454f;}
+</style>
+
+<rect width="132" height="24" x="0" y="0" rx="5" ry="5" fill="#8E4585"/> 
+<text x="5" y="15" class="tag-text">scientific method</text>
+
+</svg>
