@@ -1,6 +1,6 @@
 ---
 layout: skill-tech_page
 title: Jekyll
-name: Jekyll static site generator
+name: Jekyll
 icon: ./assets/img/tech-icons/Jekyll.svg
 ---

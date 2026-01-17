@@ -1,0 +1,12 @@
+LinkedIn:
+  icon: ./assets/img/sm-icons/LinkedIn.svg
+  link: https://www.linkedin.com/in/maigraves
+  platform-blurb: "Motivated and detail-oriented graduate student with a passion for leveraging data to drive ethical and impactful decisions that make the world a better place. Skilled in R, SQL, Excel, and Power BI; familiar with Python and Tableau. Experienced in analyzing data to uncover actionable insights and presenting complex findings to non-technical stakeholders. Proven leadership and communication skills and adept at collaborating in team-based projects, optimizing processes, and solving problems with a focus on empathy and emotional intelligence. Seeking to apply my analytical and technical skills in real-world contexts and contribute to impactful data-driven decisions in sectors like non-profits, government, and sustainability."
+GitHub:
+  icon: ./assets/img/sm-icons/GitHub.svg
+  link: https://github.com/maisygraves
+  platform-blurb: "I aim to empower people through data by translating complex information into accurate and meaningful stories, providing insights that support informed, impactful decisions and bringing complexity and nuance to light. I'm especially interested in bridging disciplines — using data, ethics, and clear argumentation to bring complex, fragmented problems into sharper focus. I believe that better thinking comes from better questions, not tighter silos. I think that well-stewarded data gives people the tools they need to understand the systems around them so they can advocate for themselves."
+Bluesky:
+  icon: .assets/img/sm-icons/Bluesky.svg
+  link: https://bsky.app/profile/mtropy.bsky.social
+  platform-blurb: none
