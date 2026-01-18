@@ -1,7 +1,6 @@
 ---
-layout: skill-tech_page
-title: statistical-inference
-name: statistical inference
-icon: /assets/img/skill-icons.statistical-inference.svg
+layout: skill_page
+skills: statistical-inference
+title: statistical inference
 color: #8E4585
 ---

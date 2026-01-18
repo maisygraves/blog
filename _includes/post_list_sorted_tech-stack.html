@@ -1,4 +1,4 @@
-{% assign filtered_posts = site.posts | where: "category", page.category %}
+{% assign filtered_posts = site.posts | where: "tech-stack", page.tech-stack %}
 {% for post in filtered_posts %}
 
 {% include post_list_to-sort.html %}

@@ -1,5 +1,6 @@
 ---
-layout: skill-tech_page
-title: descriptive-statistics
-name: descriptive-statistics
+layout: skill_page
+skills: descriptive-statistics
+title: descriptive statistics
+color: #A0522D
 ---

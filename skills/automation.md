@@ -1,5 +1,6 @@
 ---
-layout: skill-tech_page
+layout: skill_page
+skills: automation
 title: automation
-name: automation
+color: #4A5D23
 ---

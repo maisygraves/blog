@@ -53,7 +53,20 @@
 }
 
 
-/*---------------titles, blurbs -------------*/
+/*================= COLLECTION LAYOUT STYLES ===============*/
+
+.icon_as_page_title {
+    display: flex;
+    width: auto; 
+    height: 60px; 
+    margin-bottom: 50px;
+}
+.icon_as_page_title_text {
+    align-items: baseline;
+    gap: 20px;
+    font-weight: 800;
+}
+
 
 /*
 header {

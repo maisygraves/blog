@@ -1,5 +1,6 @@
 ---
-layout: skill-tech_page
+layout: skill_page
+skills: modeling
 title: modeling
-name: modeling
+color: #6C5154
 ---

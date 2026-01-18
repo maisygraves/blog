@@ -1,5 +1,6 @@
 ---
-layout: skill-tech_page
+layout: skill_page
+skills: infoVis
 title: infoVis
-name: information visualization
+color: #A0522D
 ---

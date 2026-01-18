@@ -1,5 +1,5 @@
 ---
 layout: tech_stack-page
-title: Linux
-tech-stack: Linux
+title: CSS
+tech-stack: CSS
 ---

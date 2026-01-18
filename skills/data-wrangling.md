@@ -1,7 +1,6 @@
 ---
-layout: skill-tech_page
+layout: skill_page
 skills: data-wrangling
-name: data-wrangling
-icon: /assets/img/skill-icons/data-wrangling.svg
+title: data wrangling
 color: #755728
 ---

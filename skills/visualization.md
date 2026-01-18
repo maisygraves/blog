@@ -1,5 +1,6 @@
 ---
-layout: skill-tech_page
+layout: skill_page
+skills: visualization
 title: visualization
-name: visualization
+color: #A0522D
 ---

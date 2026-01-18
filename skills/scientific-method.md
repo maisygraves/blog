@@ -1,5 +1,6 @@
 ---
-layout: skill-tech_page
-title: scientific-method
-name: scientific method
+layout: skill_page
+skills: scientific-method
+title: scientific method
+color: #8E4585
 ---

@@ -1,5 +1,6 @@
 ---
-layout: skill-tech_page
-title: data-storage
-name: data-storage
+layout: skill_page
+skills: data-storage
+title: data storage
+color: #4A5D23
 ---

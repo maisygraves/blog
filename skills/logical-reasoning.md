@@ -1,7 +1,6 @@
 ---
-layout: skill-tech_page
-title: logical-reasoning
-name: logical reasoning
-icon: /assets/img/skill-icons/logical-reasoning.svg
+layout: skill_page
+skills: logical-reasoning
+title: logical reasoning
 color: #8E4585
 ---

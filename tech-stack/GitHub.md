@@ -1,6 +1,5 @@
 ---
-layout: skill-tech_page
+layout: tech_stack-page
 title: GitHub
-name: GitHub 
-icon: ./assets/img/tech-icons/GitHub.svg
+tech-stack: GitHub 
 ---
