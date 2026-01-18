@@ -6,7 +6,7 @@
         font-weight: 400;
         font-family: 'DejaVu sans Mono', monospace;
         width: 100%;
-        max-width: 100%;
+        max-width: 1400px;
         min-width: 0;
         padding: 40px;
         color: #36454f
@@ -16,8 +16,46 @@
 
 /*=============== HEADER STYLES ================*/
 
+.home_nav_button {text-align: right;}
+
+.post_subheading_top {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px dashed #36454f;
+}
+.post_subheading_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post_subheading_icon_imgs {
+    width: 100%; 
+    height: 20px; 
+    object-fit: contain;}
+.post_subheading_icon_display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+}
+
+/*================== NAV-BAR-PAGE STYLES ==================*/
+
+.projects-nav-post_list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px dashed #36454f;
+}
+
+
 /*---------------titles, blurbs -------------*/
 
+/*
 header {
     display: flex; 
     flex-direction: column;
@@ -79,7 +117,7 @@ header {
   width:auto;     
 }
 
-/*
+
     div {margin: 10px;}
     a {
         color: inherit;

@@ -8,6 +8,8 @@ title: home
     <p>{{ site.description }}</p>
 </header>
 
+{% include navigation_bar.html %}
+
 <ul style="background-color: pink;">
   {% for post in site.posts %}
     <li>

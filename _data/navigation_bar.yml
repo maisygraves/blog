@@ -1,0 +1,8 @@
+- name: projects
+  link: /projects.html
+- name: notes
+  link: /notes.html
+- name: resume
+  link: https://www.linkedin.com/in/maigraves
+- name: resources
+  link: /resources.html

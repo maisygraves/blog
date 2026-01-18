@@ -1,14 +1,21 @@
-    <ul class="subheading" style="border-bottom: 1px solid;">
-        <li>{{ page.category }}</li>
-        <li>{{ page.date | date: "%Y-%b-%d" }}</li>
-    </ul>
+<div class="post_subheading_top">
+    <p>{{ page.category }}</p>
+    <p>{{ page.date | date: "%Y-%b-%d" }}</p>
+</div>
+<div class="post_subheading_bottom">
+    <p>{{ page.repo }}</p>
 
-    <ul class="subheading">
-        <li>{{ page.repo }}</li>
-        <li>
-            <ul class="post_skills-tech">
-                {% include skills_feature.html %}
-                {% include tech_feature.html %}
-            </ul>
-        </li>
+    <ul class="post_subheading_icon_display">
+    {% for skills in page.skills %}
+        <li><a href="/skills/{{ skills }}">
+            <img src="/assets/img/skill-icons/{{ skills }}.svg" class="post_subheading_icon_imgs">
+        </a></li>
+    {% endfor %}
+    {% for tech-stack in page.tech-stack %}
+        <li><a href="/tech-stack/{{ tech-stack }}">
+            <img src="/assets/img/tech-icons/{{ tech-stack }}.svg" class="post_subheading_icon_imgs">
+        </a></li>
+    {% endfor %}
     </ul>
+    
+</div>

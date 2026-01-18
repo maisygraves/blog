@@ -1,11 +1,13 @@
 ---
 layout: default
+title: notes
+category: note
 ---
 
 {% include home_nav_button.html %}
 
 <h1>{{ page.title }}</h1>
+<p>blurb</p>
 
-{% include post_subheading.html %}
+{% include post_list_sorted_category.html %}
 
-{{ content }}

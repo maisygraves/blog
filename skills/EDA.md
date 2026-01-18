@@ -1,5 +1,7 @@
 ---
 layout: skill-tech_page
-title: EDA
+skils: EDA
 name: exploratory data analysis
+icon: /assets/img/skill-icons/EDA.svg
+color: #974B59
 ---
