@@ -1,3 +1,15 @@
 ---
-layout: non_home-page
+layout: non_home-page-w_title
+title: resources
+blurb: this is an annotated index of the ideas and tools that inform my work and serve as part reference library, part intellectual history
 ---
+
+<div>
+{% for item in site.data.resources %}
+    <div class="resources-post_list-card">   
+        {% include resource_card-content.html %} 
+    </div>
+{% endfor %}
+</div>
+
+
