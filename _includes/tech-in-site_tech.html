@@ -1,0 +1,12 @@
+
+<h4>tech stack:</h4>
+
+<ul class="about-tech_stack">
+{% for item in site.data.tech-stack %}
+
+<li>
+  <a href="{{ item.page_link }}"><img src="{{ item.icon }}" alt="{{ item.title }}" class="post_subheading_icon_imgs"></a>
+</li>
+
+{% endfor %}
+</ul>

@@ -23,9 +23,9 @@
       <path id="path_sr" d="M 25 180 A 180 180 0 0 1 150 35" fill="none"></path>
       <text class="circle-text"><textPath href="#path_sr" startOffest="80">scientific reasoning</textPath></text>
     
-      <!--<a href="/skills/statistical-inference.html" target="_parent">
-      <rect width="159" height="24" x="95" y="100" rx="5" ry="5" fill="#8E4585"/> -->
-      <text x="100" y="115" class="tag-text">statistical inference</text> <!-- </a> -->
+      <a href="/skills/statistical-inference.html" target="_parent">
+      <rect width="159" height="24" x="95" y="100" rx="5" ry="5" fill="#8E4585"/>
+      <text x="100" y="115" class="tag-text">statistical inference</text> </a> 
 
       <!--<a href="/skills/scientific-method.html" target="_parent">
       <rect width="132" height="24" x="70" y="150" rx="5" ry="5" fill="#8E4585"/>-->

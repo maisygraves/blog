@@ -5,9 +5,10 @@
 
 # site settings
 title: b-Log
-
+name: Maisy Graves
 url: https://github.com/maisygraves/blog
-description: A map of the ideas, tools and people shaping my practice, presented through documented projects with reflective write-ups and a curated collection of technical resources.
+description: documented projects, reflective write-ups and a curated collection of technical resources
+about-me: I analyze data to help make complex problems clearer, with an emphasis on careful reasoning and clear communication.
 
 collections:
   skills:

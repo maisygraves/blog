@@ -3,8 +3,4 @@
         <img src="/assets/img/skill-icons/{{ skills }}.svg" class="post_subheading_icon_imgs">
     </a></li>
 {% endfor %}
-{% for tech-stack in post.tech-stack %}
-    <li><a href="/tech-stack/{{ tech-stack }}">
-        <img src="/assets/img/tech-icons/{{ tech-stack }}.svg" class="post_subheading_icon_imgs">
-    </a></li>
-{% endfor %}
+{% include tech-in-post_tech.html %}
