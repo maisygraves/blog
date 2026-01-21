@@ -1,124 +1,85 @@
-# Project:  b-Log 
-A personal website to showcase professional skills, projects, notes and resources. 
+# b-Log
+a personal knowledge graph and portfolio engine designed to track the evolution of my technical skills through projects and notes.
 
-## Purpose
+## 1. System Architecture
+The system is currently a static Jekyll site, designed to transition into a database-backed portfolio.
 
-Portfolio
-- showcase personal projects and technical skills
-- portfolio for potential opportunities
+**Current Flow**
 
-Technical Practice
-- front-end tools: HTML/CSS
-- Git workflows and source code management
-- file organization and reproducibility
-- (planned) database design with PostgreSQL
+Markdown (Front Matter) --> Jekyll + Liquid --> GitHub Pages
 
-Collaboration/Contribution
-- facilitate collaboration on problems and projects
-- share thoughts and approaches that may help others
+**Target Architecture** (planned)
+The database acts as a queryable "source of truth" for career analytics, while Jekyll handles the static presentation.
 
-Non-Goals
-- monetization
-- notoriety
+Markdown --> Ingestion Script --> PostgreSQL --> Data Insights/Build Process
 
-## Audience
-- prospective employers
-- peers and collaborators
-- personal/professional contacts
-- myself (technical skill development)
+## 2. The Data Contract
+To ensure future compatibility with the PostgreSQL backend, all content must follow this metadata schema in the YAML front matter:
 
-# Features
+|Field     |Type  |Requirement|Description                           |
+|----------|------|-----------|--------------------------------------|
+|category  |enum  |required   |must be exactly 'project' or 'note'   |
+|skills    |list  |required   |array of skills (list by Grolemund)   |
+|tech stack|list  |required   |array of tools (e.g. Postgres, Python)|
+|repo_url  |string|optional   |required if category: project         |
 
-## Navigation
-- access the home page at any time
-- access any page from the home page
-- access skills and tools from home page and associated posts
-- access external sites from home page
-- access GitHub repos from project posts 
+*example front matter:*
+YAML
+---
+title: ""
+category: project
+skills: [data-retrieval, visualization]
+techstack: [Python, Postgres]
+repo_url: ""
+---
 
-## Content Browsing
-- projects page for completed studies with links to GitHub repos
-- notes page discussing projects
-- list of posts by category, labeled with associated skills & tools
-- resources page with curated references
-- page per skill/tool with list of associated posts
+## 3. Database Design (planned)
+The backend is modeled to handle many-to-many relationships between posts and skills/tech stack.
 
-## External Links
-- LinkedIn for resume
-    - from "resume" in nav bar 
-    - from social icons navigation
-- GitHub for source code
-- Bluesky for interaction and casual sharing
+- posts TABLE: core metadata(title, date, url, category)
 
-## Learning/Practice
-- version control and Git workflow
-- source code and file management
-- iterative development
-- modular deployment, small objects/components and good documentation
-- front-end design
-- back-end (database) integration
+- skills TABLE: master list of tech stack tools and data science competencies.
 
-## Collaboration Features
-- make work visible and reproducible
-- publish technical ideas and approaches for others to view
+- post_skills/post_techstack BRIDGE: links skills and tech stack to post, allowing for queries like 'show all projects where they used Postgres'.
 
-# Requirements
+## 4. Features and Requirements
 
-## Functional
-- multi-page: home, projects, notes, resources, skills, tools
-- navigation menu
-- skills & tools navigation from home-page
-- external links: LinkedIn, GitHub, Bluesky
-- access skills & tools from post listings
-- access GitHub repos from project posts
-- simple design - not SWE-focused
-- platform for technical practice
-- database-driven pre-build (planned)
+**Content Browsing and Navigation**
 
-## Non-Functional 
-- clean design, not code-heavy
-- designed for easy future data-base driven content pre-build
-- enables iterative development
+- dynamic skills and tech stack pages: each skill/tool has a dedicated page listing all associated projects and notes.
 
-## Future
-- data maintenance via PostgreSQL
+- bi-directional linking: access skill/tech stack post-lists from posts; access posts from skill/tech stack pages.
 
-# System Architecture
+- curated resources: a dedicated space for references used during project development.
 
-## Current State 
-browser --> front-end --> GitHub pages
+**Technical Practice Goals**
 
-## Future State
-database
-|>
-build script --> YAML/JSON files --> Jekyll + Liquid templates
-|>
-GitHub Pages --> user browser
+- knowledge graphing: moving beyond 'tags' to a relational understanding of my own work.
 
-# Front End
-HTML, CSS
-Jekyll + Liquid 
+- iterative deployment: using modular components and clean documentation best practices for facilitating reproducibility.
 
-# Back End (planned)
-PostgreSQL
-- store and retrieve content
-- store and retrieve project data
-- potential educational use-cases
+- backend integration: practice in schema design, normalization and ETL logic.
 
-# Deployment and Maintenance
+## 5. Deployment and Maintenance
 
-## Hosting & Development
-- hosted on GitHub Pages
-- built from Jekyll and Liquid templates
-- content pre-build from YAML file 
+**Hosting**
 
-## Deployment Steps
-- run Jekyll to generate static pages
-- push pages to GitHub repo
-- ensure cohesion across GitHub, LinkedIn and Bluesky
+- frontend: GitHub Pages
 
-## Maintenance
-- iterative additions and edits to content
-- Git/GitHub version control system
-- content management in YAML
-- (planned) data/content management in PostgreSQL
+- backend (planned): local PostgreSQL with future migration to cloud infrastructure.
+
+**Manual Maintenance Workflow**
+
+1. draft: create Markdown file with compliant front matter.
+
+2. verify: ensure all listed skills and tools exist in the master lists to maintain referential integrity.
+
+3. sync (planned): run Python ingestion script to update from PostgreSQL database.
+
+4. deploy: push to GitHub to trigger the Jekyll build.
+
+## 6. Purpose and Audience
+
+- audience: prospective employers, peers and myself
+
+- non-goals: this project is strictly for professional development and knowledge sharing; it is not for monetization.

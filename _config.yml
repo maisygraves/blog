@@ -13,5 +13,28 @@ about-me: I analyze data to help make complex problems clearer, with an emphasis
 collections:
   skills:
     output: true
-  tech-stack:
+  techstack:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "techstack"
+    values:
+      layout: "techstack-page"
+  - scope:
+      path: ""
+      type: "skills"
+    values:
+      layout: "skills-page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+    
+

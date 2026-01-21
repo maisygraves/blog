@@ -1,21 +1,21 @@
 ---
-layout: default
 title: home
 ---
 
 {% include home-title.html %}
 
-{% include navigation_bar.html %}
+{% include home-navigation_bar.html %}
 
 <div class="mid-page">
 <div>
-{% include diagram-front_page.html %}
+{% include home-diagram.html %}
 </div>
 
 <div class="about-text">
-<div> {% include about_me-section.html %}</div>
+<div> {% include section-aboutme.html %}</div>
 
-<div style="margin-top: 100px;">{% include tech-in-site_tech.html %}</div>
+<div class="techstack-icons">
+{% include home-techstack.html %}
 </div>
 
 </div>

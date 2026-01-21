@@ -1,0 +1,6 @@
+{% assign filtered_posts = site.posts | where: "category", page.category %}
+{% for post in filtered_posts %}
+
+{% include postlist-to_be_sorted.html %}
+
+{% endfor %}

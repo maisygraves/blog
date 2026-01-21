@@ -1,0 +1,16 @@
+<div style="flex-basis: 25%;">
+    <img src="{{ item.image }}" alt="{{ item.title }}">
+</div>
+
+<div>
+    <h3><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></h3>
+    <p>{{ item.personal-value }} - {{ item.industry-value }}</p>
+    <div class="post-subheading-bottom">
+        <p><a href="{{ item.link }}" target="_blank">...visit {{ item.type }}</a></p>
+
+        <ul class="post-subheading-icon_display">
+            {% include feature-skills_techstack-item.html %}
+        </ul>
+    </div>
+    
+</div>

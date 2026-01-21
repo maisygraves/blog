@@ -1,0 +1,12 @@
+<div class="post-subheading-top">
+    <p>{{ page.category }}</p>
+    <p>{{ page.date | date: "%Y-%b-%d" }}</p>
+</div>
+<div class="post-subheading-bottom">
+    <p>{{ page.repo }}</p>
+
+    <ul class="post-subheading-icon_display">
+    {% include feature-skills_techstack-page.html %}
+    </ul>
+
+</div>

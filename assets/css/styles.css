@@ -31,25 +31,25 @@ nav {
     gap: 30px;
 }
 
-.home_nav_button {text-align: right;}
+.nav_to_home {text-align: right;}
 
-.post_subheading_top {
+.post-subheading-top {
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px dashed #36454f;
 }
-.post_subheading_bottom {
+.post-subheading-bottom { 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.post_subheading_icon_imgs {
+.post-subheading-icon_imgs {
     width: 100%; 
-    height: 20px; 
+    height: 18px; 
     object-fit: contain;}
     
-.post_subheading_icon_display {
+.post-subheading-icon_display {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@ nav {
 
 /*================== NAV-BAR-PAGE STYLES ==================*/
 
-.projects-nav-post_list {
+.projects-nav-postlist {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -67,7 +67,7 @@ nav {
     gap: 20px;
     border-bottom: 1px dashed #36454f;
 }
-.projects-nav-post_list-date-title {
+.projects-nav-postlist-date_title {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -76,24 +76,24 @@ nav {
 
 /*    resources page     */
 
-.resources-post_list-card {
+.resources-postlist-card {
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 3px double #fff;
     padding: 10px;
-    gap: 5px;
+    gap: 15px;
 }
 
 /*================= COLLECTION LAYOUT STYLES ===============*/
 
-.icon_as_page_title {
+.icon-as-page_title {
     display: flex;
     width: auto; 
     height: 60px; 
     margin-bottom: 50px;
 }
-.icon_as_page_title_text {
+.icon-as-page_title-text {
     align-items: baseline;
     gap: 20px;
     font-weight: 800;
@@ -108,7 +108,7 @@ nav {
     padding: 20px;
 }
 
-.image {
+.home-diagram {
     object-fit: fill;
     width: 100%;
     height: auto;
@@ -127,10 +127,4 @@ nav {
     letter-spacing: 1px;
 }
 
-.about-tech_stack {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-}
+.techstack-icons {margin-top: 100px;}
