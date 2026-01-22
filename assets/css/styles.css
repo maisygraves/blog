@@ -17,7 +17,7 @@
 /*=============== HEADER STYLES ================*/
 
 .title-section {margin-bottom: 70px;}
-.title-blurb-section {width: 75%;}
+.title-description-section {width: 75%;}
 .title-home {
     display: flex;
     flex-direction: column;
@@ -127,4 +127,4 @@ nav {
     letter-spacing: 1px;
 }
 
-.techstack-icons {margin-top: 100px;}
+.tools-icons {margin-top: 100px;}

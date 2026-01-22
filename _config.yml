@@ -4,24 +4,26 @@
 
 
 # site settings
-title: b-Log
-name: Maisy Graves
 url: https://github.com/maisygraves/blog
+title: b-Log
 description: documented projects, reflective write-ups and a curated collection of technical resources
+
+# about me table
+name: Maisy Graves
 about-me: I analyze data to help make complex problems clearer, with an emphasis on careful reasoning and clear communication.
 
 collections:
   skills:
     output: true
-  techstack:
+  tools:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "techstack"
+      type: "tools"
     values:
-      layout: "techstack-page"
+      layout: "tools-page"
   - scope:
       path: ""
       type: "skills"

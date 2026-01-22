@@ -6,7 +6,7 @@
   image: /assets/img/resources/Infinite_Codes.png
   link: https://patreon.com/InfiniteCodes
   skills: [EDA, statistical-inference]
-  techstack: [Visual-Studio-Code, GitHub]
+  tools: [Visual-Studio-Code, GitHub]
 - title: Giraffe Academy 
   pubyear: 2023
   type: channel
@@ -15,4 +15,4 @@
   image: /assets/img/resources/Giraffe_Academy.png
   link: http://www.youtube.com/@GiraffeAcademy
   skills: [modeling, data-storage]
-  techstack: [Jekyll, GitHub]
+  tools: [Jekyll, GitHub]

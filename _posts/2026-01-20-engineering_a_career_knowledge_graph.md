@@ -1,49 +1,51 @@
 ---
-title: "engineering a career knowledge graph: why I built my portfolio as a database"
+title: "I engineered a career knowledge graph like a database"
 category: note
 skills: [data-storage, data-retrieval, automation, logical-reasoning]
-techstack: [Linux, HTML, CSS, Git, GitHub, Jekyll, Visual-Studio-Code]
+tools: [Linux, HTML, CSS, Git, GitHub, Jekyll, Visual-Studio-Code]
 ---
 
-Most portfolios are "write-only" memory. Projects are summarized, published and then sit in a linear timeline. But as a data scientist, I view my work differently. I don't just see a list of projects; I see an evolving network of skills, tools and competencies that grow over time.
+Most portfolios summarize projects that then sit in a linear timeline on their website or GitHub. I decided to take a different approach and turn my list of projects into an evolving network of skills, tools and competencies that grow over time.
 
-To capture this, I built **b-Log**, a personal knowledge graph and portfolio engine designed to treat my professional development like a data engineering problem.
+To achieve this, I designed a queryable portfolio engine, framing my professional development like a data engineering problem. The target goal is to transform a list of projects and technical notes into an evolving knowledge graph.
 
-# The Problem: The "Flat File" Portfolio
-Standard blogs use tags which don't enforce types or ensure consistency and they make it difficult to answer complex questions like, "Show my every project where I used Python for data retrieval but didn't use a SQL backend."
+# The Vision
+My goal is to move away from flat-file tagging to a **relational understanding** of skills. Every post is a data input that will adhere to a predefined schema to ensure the portfolio is analytics-ready from day one.
 
-I wanted to move beyond "tagging" and toward a **relational understanding** of my work.
+# System Architecture and Migration Path
+This project will follow an iterative deployment strategy, moving from static files to a robust relational backend as I grow my capabilities (and indulge my curiosity).
 
-## 1. The Data Contract: Schema First
-In industry, data quality starts with a contract. Before I wrote a single line of CSS for this site, I defined a strict YAML front matter schema. Every post on this site must adhere to a specific metadata structure:
-- category: strictly enforced (project vs note)
-- skills: mapped to established frameworks (like Grolemund's)
-- tech stack: a defined array of tools (e.g. Python, Postgres, Jekyll)
-By treating my Markdown files as structured data inputs, I've ensured that my portfolio is "analytics-ready" from day one.
+1. Stage One (current) - static ingestion:
+Markdown (YAML front matter) --> Jekyll + Liquid --> GitHub Pages
 
-## 2. From Static Site to Relational Database
-Currently, b-Log operates as a static site using Jekyll and Liquid. However, the architecture is designed for a transition to a database-backend ecosystem.
+2. Stage Two (local migration) - ETL pipeline
+Python Script --> PostgreSQL (local via psql)
 
-**Current Flow:**
-Markdown (front matter) --> Jekyll + Liquid --> GitHub Pages
+3. Stage Three (target state) - relational engine:
+PostgreSQL database --> Python engine --> Markdown/YAML interface --> hosted on GitHub Pages
 
-**The Target State:**
-Markdown --> Ingestion Script (Python) --> PostgreSQL --> Data Insights
+# Data Entities and Relational Logic
+To support queries (e.g. "show every project using Python but not SQL"), the database utilizes a normalized, many-to-many architecture.
 
-The goal is to move my "source-of-truth" from a folder of files to a PostgreSQL database. By modeling the backend with amny-to-many relationships (using bridge tables for *post skills* and *post techstack*), I can perform complex queries on my own career. This is a direct practice in database design, normalization and ETL logic.
+## The Data Contract
 
-## 3. Why This Matters for Data Science
-Building a portfolio this way isn't just about showing off projects; it's about demonstrating the core competencies required in modern data roles:
-- **Knowledge Graphing:** Understanding that data is most valuable when it's connected, not siloed.
-- **Scheme Enforcement:** Recognizing that messy data leads to messy insights.
-- **Iterative Deployment:** Using modular components and clean documentation to ensure my "knowledge engine" is reproducible.
+|Entity    |Type     |Requirement                                       |
+|----------|---------|--------------------------------------------------|
+|Posts     |node     |categorized as either a **project** or a **note** |
+|Skills |attribute|maps to 17 skills from the Grolemund/Wickham model|
+|Tools|attribute|array of tools (e.g. Postgres)                    |
+|Resources |reference|curated list of external artifacts                |
 
-# The Vision: A Queryable Career
-The ultimate goal of b-Log is to create a bi-directional experience. When you click on a skill like *Postgres*, you shouldn't just see a list of posts but also a curated view of every project I've built with that tool, the notes I took while learning it, and the other skills that frequently overlap with it.
+## Relational Mapping
+- Bridge tables: **Post_Skills** and **Post_Tools** junction tables enable the networked structure.
+- Normalization: **Skills** and **Tools** exist as unique entities to ensure consistency and prevent tag bloat.
 
-It's not just a blog, it's a living map of what I know and how I learned it.
+# Functional Requirements
+- Schema Enforcement: Entries need to follow the YAML front matter "contract".
+-Bi-Directional Discovery: Clicking a skill or tool must surface every project and technical note exemplifying that skill or tool.
+- Portfolio Filtering: provide a "recruiter view" to filter by specific competencies defined both in the skill framework inspired by Grolemund and Wickham's venn diagram and in my growing "toolbox".
 
-<hr>
-
-### What's Next?
-I am currently refining the Python script that will handling the ingestion from my Markdown files into my local Postgres instance. Stay tuned for a technical deep-dive into the SQL schema and the ETL challenges of syncing a static site with a relational database.
+# Non-Functional Requirements
+- Data Integrity: GIGO prevention via Jekyll-Liquid templates.
+- Iterative Design: Architecture to remain modular,allowing the source-of-truth to move from Markdown files to a live database without rewriting content.
+- Demonstrable Competency: The system itself must serve as a proof-of-concept for knowledge graphing, ETL logic and database normalization.
