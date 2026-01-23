@@ -1,8 +1,8 @@
 - name: projects
-  link: /projects.html
+  link: ./projects.html
 - name: resume
   link: https://www.linkedin.com/in/maigraves
 - name: notes
-  link: /notes.html
+  link: ./notes.html
 - name: resources
-  link: /resources.html
+  link: ./resources.html
