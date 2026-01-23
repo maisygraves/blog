@@ -1,10 +1,10 @@
 - name: LinkedIn
-  icon: /assets/img/sm-icons/LinkedIn.svg
+  icon: ./assets/img/sm-icons/LinkedIn.svg
   link: https://www.linkedin.com/in/maigraves
 - name: GitHub
-  icon: /assets/img/sm-icons/GitHub.svg
+  icon: ./assets/img/sm-icons/GitHub.svg
   link: https://github.com/maisygraves
 - name: Bluesky
-  icon: /assets/img/sm-icons/Bluesky.svg
+  icon: ./assets/img/sm-icons/Bluesky.svg
   link: https://bsky.app/profile/mtropy.bsky.social
 

@@ -3,7 +3,7 @@
   type: channel
   personal-value: explain real good
   industry-value: fits into world real good bbblekljlkdjflksjdflkjsdflkjsaldfkjsdflkjsd lskdjflksjdlfjksdlkfj asldkfjlsdkjfldkfldkjfdlkjfldksjf alsdkfjlsdkjfldskjfldksj aldkjfldkjflksjdf 
-  image: /assets/img/resources/Infinite_Codes.png
+  image: ./assets/img/resources/Infinite_Codes.png
   link: https://patreon.com/InfiniteCodes
   skills: [EDA, statistical-inference]
   tools: [Visual-Studio-Code, GitHub]
@@ -12,7 +12,7 @@
   type: channel
   personal-value: explain real good
   industry-value: fits into world real good bbblekljlkdjflksjdflkjsdflkjsaldfkjsdflkjsd lskdjflksjdlfjksdlkfj asldkfjlsdkjfldkfldkjfdlkjfldksjf alsdkfjlsdkjfldskjfldksj aldkjfldkjflksjdf 
-  image: /assets/img/resources/Giraffe_Academy.png
+  image: ./assets/img/resources/Giraffe_Academy.png
   link: http://www.youtube.com/@GiraffeAcademy
   skills: [modeling, data-storage]
   tools: [Jekyll, GitHub]
