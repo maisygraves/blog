@@ -1,12 +1,15 @@
 <div class="post-subheading-top">
-    <p>{{ page.category }}</p>
-    <p>{{ page.date | date: "%Y-%b-%d" }}</p>
-</div>
-<div class="post-subheading-bottom">
-    <p>{{ page.repo }}</p>
+    <p></p>
 
     <ul class="post-subheading-icon_display">
     {% include feature-skills_tools-page.html %}
     </ul>
 
 </div>
+
+<div class="post-subheading-bottom">
+    <p>{{ page.repo }}</p>
+    <p>{{ page.date | date: "%Y-%b-%d" }}</p>
+</div>
+
+<hr>
