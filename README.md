@@ -24,6 +24,7 @@ To ensure future compatibility with the PostgreSQL backend, all content must fol
 |repo_url  |string|optional   |required if category: project         |
 
 *example front matter:*
+```
 YAML
 ---
 title: ""
@@ -32,7 +33,7 @@ skills: [data-retrieval, visualization]
 techstack: [Python, Postgres]
 repo_url: ""
 ---
-
+```
 ## 3. Database Design (planned)
 The backend is modeled to handle many-to-many relationships between posts and skills/tech stack.
 
