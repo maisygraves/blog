@@ -1,86 +1,77 @@
-# b-Log
-a personal knowledge graph and portfolio engine designed to track the evolution of my technical skills through projects and notes.
+# b-Log Source Code
 
-## 1. System Architecture
-The system is currently a static Jekyll site, designed to transition into a database-backed portfolio.
+The source code for my personal blog. Built with Jekyll, hosted via GitHub Pages, and crafted using custom HTML/CSS and Liquid templates.
 
-**Current Flow**
+## Tech Stack
 
-Markdown (Front Matter) --> Jekyll + Liquid --> GitHub Pages
+- Static Site Generator: Jekyll
+- Hosting: GitHub Pages
+- Templating: Liquid
+- Styling: Custom CSS (located in assets/css/)
 
-**Target Architecture** (planned)
-The database acts as a queryable "source of truth" for career analytics, while Jekyll handles the static presentation.
+## Local Development
 
-Markdown --> Ingestion Script --> PostgreSQL --> Data Insights/Build Process
+To run this blog locally and preview changes before pushing to GitHub:
 
-## 2. The Data Contract
-To ensure future compatibility with the PostgreSQL backend, all content must follow this metadata schema in the YAML front matter:
+1. Install Ruby version 2.7.0 or higher for your OS
+2. Install Jekyll from the terminal
+3. Load site directory from GitHub 
+4. build static pages to /_static/ and run on local server http://localhost:4000
+```
+jekyll serve
+```
 
-|Field     |Type  |Requirement|Description                           |
-|----------|------|-----------|--------------------------------------|
-|category  |enum  |required   |must be exactly 'project' or 'note'   |
-|skills    |list  |required   |array of skills (list by Grolemund)   |
-|tech stack|list  |required   |array of tools (e.g. Postgres, Python)|
-|repo_url  |string|optional   |required if category: project         |
+## Content Workflow
 
-*example front matter:*
+**Creating a Post**
+
+1. Add a new Markdown file to the _posts/ folder.
+2. Naming Convention: YYYY-MM-DD-title-of-post.md (Crucial for Jekyll to recognize the date).
+3. Frontmatter Template:
 ```
 YAML
 ---
-title: ""
-category: project
-skills: [data-retrieval, visualization]
-techstack: [Python, Postgres]
-repo_url: ""
+title: "Your Post Title"
+category: [note OR project]
+link: [GitHub repository]
+date: YYYY-MM-DD 
+skills: [array of data science skills from Grolemund framework]
+tools: [array of tools in tech stack]
 ---
 ```
-## 3. Database Design (planned)
-The backend is modeled to handle many-to-many relationships between posts and skills/tech stack.
 
-- posts TABLE: core metadata(title, date, url, category)
+**Updating Layouts**
 
-- skills TABLE: master list of tech stack tools and data science competencies.
+- HTML Structure: Modify files in _layouts/ (e.g., default.html, post.html).
+- Reusable Components: Update navigation or footers in _includes/.
+- Global Settings: Change the site title or description in _config.yml.
 
-- post_skills/post_techstack BRIDGE: links skills and tech stack to post, allowing for queries like 'show all projects where they used Postgres'.
+## Deployment
 
-## 4. Features and Requirements
+Since this is hosted on GitHub Pages, deployment is simple:
+- Any changes pushed to the main branch are automatically built and deployed by GitHub Actions.
+- *Note:* If the site fails to build, check the "Actions" tab in this repository for error logs.
 
-**Content Browsing and Navigation**
+## Project Structure
 
-- dynamic skills and tech stack pages: each skill/tool has a dedicated page listing all associated projects and notes.
+_data/: Where the site's YAML data files live.
 
-- bi-directional linking: access skill/tech stack post-lists from posts; access posts from skill/tech stack pages.
+_posts/: Where the blog articles live.
 
-- curated resources: a dedicated space for references used during project development.
+_layouts/: The HTML templates (using Liquid).
 
-**Technical Practice Goals**
+_includes/: Reusable HTML snippets.
 
-- knowledge graphing: moving beyond 'tags' to a relational understanding of my own work.
+assets/: Images and CSS files.
 
-- iterative deployment: using modular components and clean documentation best practices for facilitating reproducibility.
+_config.yml: Global configuration and variables.
 
-- backend integration: practice in schema design, normalization and ETL logic.
+Collections:
+    _skills/
+    _tools/
 
-## 5. Deployment and Maintenance
-
-**Hosting**
-
-- frontend: GitHub Pages
-
-- backend (planned): local PostgreSQL with future migration to cloud infrastructure.
-
-**Manual Maintenance Workflow**
-
-1. draft: create Markdown file with compliant front matter.
-
-2. verify: ensure all listed skills and tools exist in the master lists to maintain referential integrity.
-
-3. sync (planned): run Python ingestion script to update from PostgreSQL database.
-
-4. deploy: push to GitHub to trigger the Jekyll build.
-
-## 6. Purpose and Audience
-
-- audience: prospective employers, peers and myself
-
-- non-goals: this project is strictly for professional development and knowledge sharing; it is not for monetization.
+Site pages:
+    index.html (home page)
+    notes.html
+    projects.html
+    resources.html
